@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="vahid">
+    <meta name="description" content="Formulario de contacto.">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" type="text/css" href="../pccomp.css">
+</head>
+
+<body class="bg-color">
+    <header>
+        <nav class="navbar">
+            <div>
+                <ul class="menu-nav">
+                    <li>
+                        <a class="link-icon" href="../Michael/index.html"><img class="icon-pc"
+                                src="../Multimedia/Icono-Pccomponentes.png" alt="Logo">
+                        </a>
+                    </li>
+                    <li class="menu-dropdonw">
+                        <a href="#" class="btn-menu">☰ Categorías</a>
+                        <ul class="menu-side">
+                            <li><a href="../Michael/presentacion.html">Presentación</a></li>
+                            <li><a href="../Michael/index.html">Inicio</a></li>
+                            <li><a href="../Michael/pagina1.html">¿Donde estamos?</a></li>
+                            <li><a href="../Alberto/pagina2.html">¿Quienes somos?</a></li>
+                            <li><a href="../Alberto/pagina3.html">Tienda</a></li>
+                            <li><a href="../Alberto/pagina4.html">Comparativa de productos</a></li>
+                            <li><a href="../Vahid/pagina5.html">Formulario de Contacto</a></li>
+                            <li><a href="../Vahid/pagina6.html">Formulario de Presupuesto</a></li>
+                            <li><a href="../Vahid/pagina7.html">Preguntas frecuentes</a></li>
+                        </ul>
+                    </li>
+                    <div class="search">
+                        <form action="" class="form-search">
+                            <select name="catalogo" id="catalogo ">
+                                <option value="Todo el catalogo">Todo el catálogo</option>
+                                <option value="Reacondicionado">Reacondicionado</option>
+                            </select>
+                            <input type="text" placeholder="Buscar">
+                            <button type="submit" class="btn-search">
+                                <img src="../Multimedia/IconoLuca.ico" alt="Icono Lupa"></button>
+                        </form>
+                    </div>
+                    <ul class="menu-user">
+                        <li>
+                            <a class="btn-ia" href="">
+                                <img src="../Multimedia/ICONO IA.png" alt="Icono IA" class="icon-nav">
+                                Busca con IA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../Multimedia/IconoUsuario.ico" alt="Icono usuario" class="icon-nav">
+                                Mi cuenta
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="../Multimedia/IconoCesta.ico" alt="Icono cesta" class="icon-nav">
+                                Mi cesta
+                            </a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="contenedor">
+            <h1 class="title-form">¿Quiéres contactarnos?</h1>
+            <fieldset class="bloque">
+                <audio title="Sonido del mar" controls autoplay muted loop>
+                    <source src="../Multimedia/SonidoDelMar.mp3" type="audio/mpeg"> 
+                </audio>
+                <form action="procesamiento_formulario.php" method="post">
+
+                    <p>
+                        <b>Instrucciones:</b>
+                        <br>
+                        Los campos marcados con<b> * </b>son obligatorios.
+                        <br>
+                        Los datos ​​deben coincidir con los <b>patrone</b> del campos.
+                    </p>
+
+                    <div class="fila">
+                        <label for="nombre">*Nombre:</label>
+                        <br>
+                        <input id="nombre" type="text" name="nombre" required autofocus tabindex="1"
+                            placeholder="Ej.: Ana Maria"
+                            pattern="\s*[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]{2,}(?:\s+[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]{2,})*\s*"
+                            title="Solo se accepta letras y espacios.">
+                    </div>
+
+                    <div class="fila">
+                        <label for="apellidos">*Apellidos:</label>
+                        <br>
+                        <input id="apellidos" type="text" name="Apellidos" required tabindex="2"
+                            placeholder="Ej.: García López"
+                            pattern="\s*[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]{2,}(?:\s+[A-Za-zÁÉÍÓÚÜÑáéíóúüñ]{2,})*\s*"
+                            title="Solo se accepta letras y espacios.">
+                    </div>
+
+                    <div class="fila">
+                        <label for="telefono">*Teléfono:</label>
+                        <br>
+                        <input id="telefono" type="tel" name="Teléfono" required tabindex="3"
+                            placeholder="Ej.: +34-612345678" pattern=" *\+[1-9]\d{0,2}-\d{6,14} *">
+                    </div>
+
+                    <div class="fila">
+                        <label for="email">*Email:</label>
+                        <br>
+                        <input id="email" type="text" name="email" required tabindex="4"
+                            placeholder="ejemplo@dominio.com"
+                            pattern="[A-Za-z0-9._%+\-]+@[A-Za-z0-9.\-]+\.[A-Za-z]{2,}">
+                    </div>
+
+                    <div class="fila">
+                        <label for="provincia">Provincia (Andalucía):</label>
+                        <br>
+                        <select id="provincia" name="provincia" tabindex="5">
+                            <option value="Almería">Almería</option>
+                            <option value="Cádiz">Cádiz</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Granada">Granada</option>
+                            <option value="Huelva">Huelva</option>
+                            <option value="Jaén">Jaén</option>
+                            <option value="Málaga" selected>Málaga</option>
+                            <option value="Sevilla">Sevilla</option>
+                        </select>
+                    </div>
+
+                    <div class="fila">
+                        <label for="motivo">*Motivo del contacto:</label>
+                        <br>
+                        <textarea id="motivo" name="motivo" required maxlength="300"
+                            placeholder="Escribe el motivo (máx. 300 caracteres)" rows="7"></textarea>
+                    </div>
+
+
+                    <div class="fila">
+                        <input type="submit" name="Enviar todo" value="Enviar">
+                        <input type="reset" name="Limpiar" value="Borrar">
+                    </div>
+                </form>
+            </fieldset>
+
+            
+        </section>
+    </main>
+  <footer>
+        <div class="footerbar">
+            <div>
+                <ul>
+                    <li class="title-footer"><strong>Por qué comprar</strong></li>
+                    <li><a href="https://help.pccomponentes.com/hc/es-es/articles/19503927607709-Gastos-de-env%C3%ADo" style="text-decoration: none; color: #353535;">Gastos de envío</a></li>
+                    <li><a href="../Vahid/pagina7.html" style="text-decoration: none; color: #353535;">Preguntas frecuentes</a></li>
+                    <li><a href="https://www.pccomponentes.com/opiniones" style="text-decoration: none; color: #353535;">Opiniones de clientes</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="title-footer"><strong>Quiénes somos</strong></li>
+                    <li><a href="../Alberto/pagina2.html" style="text-decoration: none; color: #353535;">Quiénes somos</a></li>
+                    <li><a href="../Michael/pagina1.html" style="text-decoration: none; color: #353535;">Nuestras tiendas</a></li>
+                    <li><a href="https://www.pccomponentes.com/aviso-legal" style="text-decoration: none; color: #353535;">Aviso legal</a></li>
+                    <li><a href="https://www.pccomponentes.com/privacidad" style="text-decoration: none; color: #353535;">Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="title-footer"><strong>Contactar</strong></li>
+                    <li><a href="../Vahid/pagina5.html" style="text-decoration: none; color: #353535;">Contacto y Ayuda</a></li>
+                    <li><a href="https://help.pccomponentes.com/hc/es-es/categories/19806195784221-Garant%C3%ADas-y-devoluciones" style="text-decoration: none; color: #353535;"></a>Devoluciones y Garantías</li>
+                    <li><a href="https://www.pccomponentes.com/wiki" style="text-decoration: none; color: #353535;">Wiki PcComponentes</a></li>
+                    <li><a href="https://www.pccomponentes.com/cookies" style="text-decoration: none; color: #353535;">Política de cookies</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li class="title-footer"><strong>Otros</strong></li>
+                    <li><a href="../Michael/index.html" style="text-decoration: none; color: #353535;">Black Friday 2025</a></li>
+                    <li><a href="https://www.pccomponentes.com/servicio-de-reparaciones" style="text-decoration: none; color: #353535;">Servicios de reparaciones</a></li>
+                    <li><a href="https://www.pccomponentes.com/servicio-tecnico-remoto-asre" style="text-decoration: none; color: #353535;">Cita asistencia técnica</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list-social-icon">
+                    <li class="title-footer"><strong>Comunidad</strong></li>
+                    <li>
+                        <a href="https://www.pccomponentes.com/blog" target="_blank">
+                            <img src="../Multimedia/unnamed.png" alt="" class="social-icon">Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/pccomponentes/" target="_blank">
+                            <img src="../Multimedia/Instagram.ico" alt="Instagram" class="social-icon">Instagram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/pccomponentes" target="_blank">
+                            <img src="../Multimedia/X.ico" alt="Twitter" class="social-icon">Twitter
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pccomponentes" target="_blank">
+                            <img src="../Multimedia/Facebook.ico" alt="Facebook" class="social-icon">Facebook
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/pccomponentesESP" target="_blank">
+                            <img src="../Multimedia/telegram.ico" alt="Telegram" class="social-icon">Telegram
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/user/PcComponentescom" target="_blank">
+                            <img src="../Multimedia/youtube.ico" alt="Youtube" class="social-icon">Youtube
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@pccomponentes.com" target="_blank">
+                            <img src="../Multimedia/Tiktok.ico" alt="TikTok" class="social-icon">TikTok
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.twitch.tv/pccomponenteses" target="_blank">
+                            <img src="../Multimedia/Twitch.ico" alt="Twitch" class="social-icon">Twitch
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pay-icon">
+                <img src="../Multimedia/Maestro.ico" alt="Icono maestro">
+                <img src="../Multimedia/MasterCard.ico" alt="Icono master card">
+                <img src="../Multimedia/Visa.ico" alt="Icono Visa">
+                <img src="../Multimedia/Paypal.ico" alt="Icono Paypal">
+                <img src="../Multimedia/Google Pay.ico" alt="Icono Google pay">
+                <img src="../Multimedia/Apple play.ico" alt="Icono Apple pay">
+            </div>
+        </div> 
+        <hr>
+        <blockquote>
+            PC Componentes y Multimedia SLU CIF B73347494. AVDA Europa, Parcela 2-5 y 2-6. 
+            Polígono industrial Las Salinas, 30840, Alhama de Murcia, Murcia. ESPAÑA.
+        </blockquote>
+    </footer>
+</body>
+
+</html>

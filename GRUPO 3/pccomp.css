@@ -1,0 +1,943 @@
+/* ---- Estilo de toda la página ---- */
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    margin-top: 150px;
+    margin-bottom: 110px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*----------------------------------------------*/
+/* -- CSS - MICHAEL ALESSANDRO APRILE MANCHA -- */
+/*----------------------------------------------*/
+
+/* -------------------- ESTILOS PÁGINA PRESENTACIÓN -------------------- */
+
+
+/* ---- Background de presentación ----*/
+.bg-color {
+    background-color: #ff6a00;
+}
+
+/* ---- Estilo del navbar ---- */
+.navbar {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    width: 100%;
+    box-shadow: 0px 2px 5px gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0px 10px 120px;
+}
+
+.menu-nav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* ---- Estilo del icono ---- */
+.link-icon {
+    margin-left: 0;
+    padding: 0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.icon-pc {
+    object-fit: contain;
+    display: block;
+    width: 120px;
+}
+
+/* ---- Estilo del boton categorias ---- */
+.menu-dropdonw {
+    list-style: none;
+}
+
+.btn-menu {
+    display: block;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.btn-menu:hover {
+    background-color: #f9f9f9;
+}
+
+/* ---- Panel lateral dropdown ----*/
+.menu-side {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 5px 0px 15px;
+    z-index: 1001;
+    transition: left 0.4s;
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0px 0px 0px;
+    margin: 0;
+    list-style-type: none;
+}
+
+.menu-dropdonw:hover .menu-side {
+    left: 0;
+}
+
+.menu-side li a {
+    display: block;
+    color: black;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+.menu-side li a:hover {
+    color: #ff6a00;
+}
+
+/* ---- Buscador ----*/
+.search {
+    flex-grow: 1;
+    margin: 0 4vw;
+    min-width: 300px;
+}
+
+.form-search {
+    display: flex;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.form-search select {
+    padding: 15px;
+    border: none;
+    border-right: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.form-search input {
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: medium;
+}
+
+.btn-search img {
+    object-fit: contain;
+    display: block;
+    width: 20px;
+}
+
+.btn-search {
+    background-color: white;
+    padding: 0px 15px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.btn-search :hover {
+    transform: scale(1.1);
+    color: #333333;
+}
+
+/* ---- Menu del usuario ---- */
+.menu-user {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 60px;
+}
+
+.menu-user li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.menu-user li a:hover {
+    background-color: #f9f9f9;
+}
+
+.icon-nav {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.btn-ia {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+}
+
+/* ---- Titulo de la pagina ----*/
+.title-presentation {
+    background-color: #ffffff;
+    font-family: sans-serif;
+    padding: 15px;
+    text-align: center;
+    font-size: 1vw;
+    margin: 40px 0px;
+    transition: transform 0.3s, color 0.3s;
+    box-shadow: 0px 5px 15px gray;
+}
+
+.title-presentation:hover {
+    transform: scale(1.1);
+}
+
+/* ---- Estilo del video ---- */
+.link-video {
+    display: block;
+    width: 50%;
+    margin: 40px auto;
+}
+
+.link-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px gray;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.link-video video:hover {
+    transform: scale(1.1);
+}
+
+/* ---- Estilo del footer ----*/
+footer {
+    background-color: white;
+    box-shadow: 0px 2px 20px gray;
+    padding: 30px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.footerbar {
+    display: flex;
+    padding: 20px;
+}
+
+.footerbar>div {
+    width: 16.6%;
+    padding: 0 10px;
+}
+
+.footerbar li {
+    margin-top: 5px;
+    color: #353535;
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.footerbar li:hover {
+    background-color: #f9f9f9;
+
+}
+
+.footerbar li.title-footer:hover {
+    background-color: white;
+    cursor: text;
+}
+
+footer hr {
+    border-color: #ffffff;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+blockquote {
+    margin-top: 40px;
+    text-align: center;
+    color: #353535;
+    font-size: small;
+}
+
+/* ---- Iconos de pago ---- */
+
+.pay-icon img {
+    width: 60px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+
+/* ---- Iconos de Comunidad ---- */
+.list-social-icon {
+    list-style-type: none;
+}
+
+.list-social-icon li a {
+    color: #353535;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.list-social-icon li {
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+/* -------------------- ESTILOS PÁGINA INICIO -------------------- */
+
+
+/* ----- Estilo body inicio ----- */
+.blackfriday {
+    background-color: #111111;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- Banner Promocional -----*/
+.banner-promotional {
+    width: 100%;
+    margin-top: -70px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.banner-promotional figure {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-promotional img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+/* ----- Sección Black Friday -----*/
+.title-bf {
+    color: #ff3333;
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.subtitle-bf {
+    color: #cccccc;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* ---- Contenedor y tarjetas de ofertas----*/
+.container-offer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.offer-bf {
+    background-color: #ffffff;
+    color: #333333;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px #ff6a00;
+    transition: transform 0.3s ease;
+}
+
+.offer-bf:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.offer-bf img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.offer-bf del {
+    color: #999999;
+    font-size: 0.9em;
+}
+
+.new-price {
+    color: #ff3333;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.discount-label {
+    background-color: #ff3333;
+    color: white;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.offer-bf .table-info {
+    width: 100%;
+    text-align: left;
+    margin-top: 15px;
+    font-size: 0.9em;
+}
+
+.offer-bf .tabla-info th {
+    color: #666;
+    padding-bottom: 5px;
+}
+
+/* -------------------- ESTILOS PÁGINA ¿DÓNDE ESTAMOS? -------------------- */
+
+
+/* ---- Tarjetas de ubicaciones ---- */
+.ubication h1 {
+    padding: 25px;
+    padding-left: 150px;
+    background-color: #ff6a00;
+    color: white;
+    font-size: 2vw;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: default;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+.card-ubication {
+    display: block;
+    text-decoration: none;
+    width: 300px;
+    color: white;
+    text-align: center;
+    background-color: #2a008b;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, color 0.3s;
+}
+
+.card-ubication h2 {
+    cursor: default;
+}
+
+.card-ubication img {
+    width: 70px;
+}
+
+.card-ubication:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4)
+}
+
+/* ---- Iframe de Google ---- */
+.google-map {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 50px 10%;
+}
+
+.map-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    scroll-margin-top: 100px;
+}
+
+.google-map iframe {
+    width: 600px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px #333;
+}
+
+/* ---- Información de las direcciones ---- */
+.info-box {
+    flex: 1;
+}
+
+.info-box h3 {
+    color: #ff6a00;
+    font-size: 1.8vw;
+    margin-bottom: 20px;
+}
+
+.info-box ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+    font-size: 1.2vw;
+}
+
+.info-box strong {
+    color: #2a008b;
+}
+
+/* ---- Redes Sociales ---- */
+.icon-social-media img {
+    width: 50px;
+}
+
+
+/*----------------------------------------------*/
+/* -- CSS - ALBERTO MARTÍNEZ CARRASCO --------- */
+/*----------------------------------------------*/
+
+/* -------------------- ESTILOS PÁGINA ¿QUIÉNES SOMOS? -------------------- */
+
+:root {
+    --pcc-orange: #ff6000;
+    --pcc-dark: #333;
+    --pcc-gray: #f4f4f4;
+}
+
+.about-us {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--pcc-dark);
+}
+
+.about-hero {
+    background-color: var(--pcc-orange);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Grid de Tarjetas */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card h3 {
+    color: var(--pcc-orange);
+}
+
+/* Sección de texto e imagen */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.text {
+    flex: 1;
+    min-width: 300px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text h2 {
+    font-size: 2vw;
+    margin-bottom: 80px;
+}
+
+.image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.container-foto {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 60px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+
+}
+
+.img-foto {
+    flex: 1;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px #ccc;
+    margin-left: 70px;
+}
+
+.img-foto img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.txt-foto {
+    flex: 2;
+}
+
+.txt-foto p {
+    margin-left: -30p;
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+    font-size: 0.9vw;
+}
+
+/* -------------------- ESTILOS PÁGINA TIENDA -------------------- */
+
+.titulo-catalogo h1 {
+    padding: 25px;
+    padding-left: 150px;
+    background-color: #ff6a00;
+    color: white;
+    font-size: 2vw;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    margin-bottom: 100px;
+}
+
+/* Contenedor de la tienda (Tema 9: Disposición) */
+.tienda-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los productos bajen a la siguiente fila */
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Tarjeta de producto (Tema 8: Modelo de cajas) */
+.producto-card {
+    background-color: white;
+    width: 310px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto-card img {
+    max-width: 100%;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Estilo de la tabla de características (Tema 5 y 8) */
+.tabla-info {
+    width: 100%;
+    border-collapse: collapse; /* Quita el espacio entre bordes de celdas */
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.tabla-info th,
+.tabla-info td {
+    border: 1px solid #eee;
+    padding: 8px;
+    text-align: left;
+}
+
+.tabla-info th {
+    background-color: #f8f8f8;
+    color: #666;
+}
+
+.precio {
+    color: #ff6a00;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.nuevo-precio {
+    color: #ff6a00;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* -------------------- ESTILOS PÁGINA COMPARATIVA PRODUCTOS -------------------- */
+
+.tabla-comparativa {
+    width: 100%;
+    max-width: 900px;
+    margin: 100px auto;
+    border-collapse: collapse; /* Tema 5: Fundamental para tablas */
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-comparativa th {
+    background-color: #472c72;
+    color: white;
+    font-size: 1.1em;
+    padding: 20px;
+    border-bottom: 4px solid #ff6a00;
+}
+
+.cabecera-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 100%;
+    text-align: center;
+}
+
+.tabla-comparativa th img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tabla-comparativa td {
+    border-bottom: 1px solid #eeeeee;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Resaltar la columna de características (Tema 8: Selectores) */
+.tabla-comparativa td:first-child {
+    font-weight: bold;
+    background-color: #f8f9fa;
+    text-align: left;
+    width: 25%;
+}
+
+/* Estilo para las celdas unificadas (colspan) */
+.tabla-comparativa td[colspan="2"] {
+    background-color: #eaf2f8;
+    color: #ff6a00;
+    font-style: italic;
+    font-weight: bold;
+}
+
+
+
+/*----------------------------------------------*/
+/* -- CSS - VAHID ALHOSEINIFAKHRAEI ----------- */
+/*----------------------------------------------*/
+
+
+/* Contenedor principal */
+.contenedor {
+    width: 700px;
+    margin: 18px auto;
+    padding: 18px;
+}
+
+/* Titulo de pagina web */
+.contenedor h1 {
+    color: #ffffff;
+    font-size: 2vw;
+    margin-bottom: 50px;
+
+}
+
+.contenedor h3 {
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+/* Bloques / cajas */
+.bloque {
+    background: #ffffff;
+    border: 1px solid #ededed;
+    border-radius: 15px;
+    padding: 16px;
+    margin-top: 14px;
+}
+
+
+/* Filas */
+.fila {
+    margin-top: 14px;
+    margin-left: 10px;
+}
+
+/* Inputs y select */
+.contenedor input,
+.contenedor select {
+    text-align: left;
+    width: 200px;
+    padding: 6px 6px;
+    border: 1px solid #d9d9d9;
+    margin-top: 6px;
+    background: #fafafa;
+}
+
+/* Inputs checkbox*/
+.contenedor input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+/* text area */
+.contenedor textarea {
+    text-align: left;
+    width: 600px;
+    padding: 6px 6px;
+    border: 1px solid #d9d9d9;
+    margin-top: 6px;
+    background: #fafafa;
+}
+
+/* Focus: acento naranja */
+.contenedor input:focus,
+.contenedor select:focus,
+.contenedor textarea:focus {
+    border-color: #ff6a00;
+    background: #ffffff;
+}
+
+/* Botones submit/reset (con tus inputs type submit/reset) */
+.contenedor input[type="submit"],
+.contenedor input[type="reset"] {
+    width: auto;
+    padding: 12px 16px;
+    margin-top: 1px;
+    font-weight: bold;
+    border: 1px solid #ededed;
+    border-radius: 15px;
+}
+
+/* Enviar (naranja) */
+.contenedor input[type="submit"] {
+    background: #ff6a00;
+    color: #ffffff;
+    font-size: medium;
+}
+
+.contenedor input[type="submit"]:hover {
+    background: #e85f00;
+}
+
+/* Borrar (gris oscuro) */
+.contenedor input[type="reset"] {
+    background: #2b2b2b85;
+    color: #ffffff;
+    margin-left: 8px;
+    font-size: medium;
+}
+
+.contenedor input[type="reset"]:hover {
+    background: #1f1f1f;
+}
+
+/*Icon*/
+.icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+
+/* ----- FAQ ----- */
+
+/* Contenedor FAQ */
+.contenedorFAQ {
+    width: 70%;
+    margin: 18px auto;
+    padding: 18px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.contenedorFAQ summary {
+    font-weight: bold;
+}
+
+.contenedorFAQ details p {
+    margin-top: 5px;
+    padding-left: 10px;
+}
