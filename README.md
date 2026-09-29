@@ -1,2 +1,2 @@
 # Copy-Pccomponentes-ClassWork
-Trabajo que hice en clase donde solo creo el front de la pagina.
+Como trabajo de clase, hice una copia de Pccomponentes para practicar HTML y CSS
